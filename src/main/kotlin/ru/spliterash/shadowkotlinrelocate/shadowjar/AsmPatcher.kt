@@ -17,7 +17,6 @@ internal class AnnotationScanner(val cw: ClassWriter, val patch: Map<String, Str
     inner class MetadataVisitor(av: AnnotationVisitor, val thatArray: Boolean = false) :
         AnnotationVisitor(Opcodes.ASM9, av) {
         override fun visit(name: String?, value: Any?) {
-            println("Value is: $value")
             val newValue = when {
                 thatArray && value is String && value.startsWith("(") -> {
                     patch.entries.fold(value) { n, u ->

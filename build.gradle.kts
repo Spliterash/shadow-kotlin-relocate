@@ -4,7 +4,6 @@ plugins {
     kotlin("jvm") version "1.7.21"
     `maven-publish`
     id("java-gradle-plugin")
-    id("com.gradle.plugin-publish") version "0.15.0"
 }
 
 repositories {
