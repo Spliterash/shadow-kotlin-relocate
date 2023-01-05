@@ -61,7 +61,7 @@ publishing {
     repositories {
         maven {
             name = "nexus"
-            url = uri("https://nexus.spliterash.ru/repository/" + rootProject.name)
+            url = uri("https://repo.spliterash.ru/" + rootProject.name)
             credentials {
                 username = findProperty("SPLITERASH_NEXUS_USR")?.toString()
                 password = findProperty("SPLITERASH_NEXUS_PSW")?.toString()

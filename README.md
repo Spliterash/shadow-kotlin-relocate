@@ -13,7 +13,7 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven {
-            url = uri("https://nexus.spliterash.ru/repository/gradle-plugin/")
+            url = uri("https://repo.spliterash.ru/group/")
         }
     }
 }
