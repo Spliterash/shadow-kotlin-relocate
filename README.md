@@ -30,6 +30,7 @@ tasks.shadowJar {
     kotlinRelocate("source", "destination")
 }
 
-// Call relocateKotlinMetadata task, bcause im have no clue how to call it in build script,
-// bcause im launch it via cmd
+tasks {
+    assemble { dependsOn(relocateKotlinMetadata) }
+}
 ```
